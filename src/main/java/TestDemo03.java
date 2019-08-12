@@ -1,0 +1,20 @@
+import java.util.LinkedList;
+import java.util.List;
+
+public class TestDemo03 {
+    public static void main(String[] args) {
+        List list = new LinkedList();
+        List list2 = new LinkedList();
+        for (int i = 0; i <= 100; i++) {
+            if (i % 2 != 0) {
+                list.add(i);
+            } else if (i % 2 == 0) {
+                list2.add(i);
+            }
+        }
+        System.out.println("1到100的奇数是");
+        ListTest.getForList(list);
+        System.out.println("1到100的偶数是");
+        ListTest.getForList(list2);
+    }
+}
