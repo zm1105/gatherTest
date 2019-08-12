@@ -11,24 +11,20 @@ public class TestDemo02 {
         while (count < 3) {
             System.out.println("请输入一个数");
             int sc = scanner.nextInt();
-            if (sc > rd) {
-                count++;
-                if (count < 2) {
+            count++;
+            if (count < 3) {
+                if (sc > rd) {
                     System.out.println("输入的数大了");
-                } else if (count > 2) {
-                    System.out.println("对不起，输入的次数超出限制");
-                }
-            } else if (sc < rd) {
-                count++;
-                if (count < 2) {
-
-                    System.out.println("输入的数小了");
-                } else if (count > 2) {
-                    System.out.println("对不起，输入的次数超出限制");
+                } else if (sc < rd) {
+                    {
+                        System.out.println("输入的数小了");
+                    }
+                } else {
+                    System.out.println("恭喜，猜对了");
+                    break;
                 }
             } else {
-                System.out.println("恭喜，猜对了");
-                break;
+                System.out.println("很遗憾，超过次数");
             }
         }
     }
