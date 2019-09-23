@@ -19,9 +19,9 @@ public class TestDemo01 {
             for (int x = 0; x <= 100; x++) {
                 for (int y = 0; y <= 33; y++) {
                     for (int z = 0; z <= 200; z += 3) {
-                        if (x  + y * 3 + z * 0.5 == 100 && x + y + z == 100) {
+                        if (x + y * 3 + z * 0.5 == 100 && x + y + z == 100) {
                             System.out.println("==========");
-                            System.out.println("公鸡" + x+"母鸡" + y+"小鸡" + z);
+                            System.out.println("公鸡" + x + "母鸡" + y + "小鸡" + z);
                         }
                     }
                 }
